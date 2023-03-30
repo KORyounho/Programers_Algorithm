@@ -3,14 +3,11 @@ class Solution {
         String answer = "";
         for(int i = 0; i<phone_number.length(); i++)
         {
-            if(i<phone_number.length()-4){
-                answer = answer + '*';
-            }
-            else{
+            if(i<phone_number.length()-4)
+                answer = answer + "*";
+            else
                 answer = answer + phone_number.charAt(i);
-            }
         }
-            
         return answer;
     }
 }
